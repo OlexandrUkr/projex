@@ -16,7 +16,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         username: config.get<string>('POSTGRES_NAME'),
         password: config.get<string>('POSTGRES_PASSWORD'),
         port: config.get('POSTGRES_PORT'),
-        entities: [__dirname + 'dist/**/*.entity{.ts, .js}'],
+        entities: [__dirname + '/**/*.entity{.ts, .js}'],
         synchronize: true,
         autoLoadEntities: true,
         logging: true,
